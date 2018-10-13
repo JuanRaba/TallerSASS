@@ -1,0 +1,20 @@
+/* ==========================================================================
+   Header Section
+   ========================================================================== */
+.header-wrapper img {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header-wrapper {
+    padding-top: 2rem;
+    padding-left: 2rem;
+  }
+
+  .header-wrapper img {
+    display: inherit;
+    width: 120px;
+    -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  }
+}

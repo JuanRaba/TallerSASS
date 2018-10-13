@@ -1,0 +1,75 @@
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
+.wrapper {
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 80%;
+  height: 100vh;
+}
+
+.hero-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 10vh;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.hero-wrapper button {
+  visibility: hidden;
+  margin-top: 1rem;
+}
+
+.hero-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.hero-title span {
+  font-size: 6.25em;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .hero-wrapper {
+    top: 110px;
+  }
+
+  .hero-wrapper button {
+    visibility: visible;
+    -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+    margin-top: 1rem;
+  }
+
+  .hero-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    color: #fff;
+  }
+
+  .hero-title span {
+    font-size: 8.125em;
+  }
+}

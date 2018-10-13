@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Playfair+Display:700">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <title>Houtel - Busca hoteles a precios increíbles </title>
+</head>
+
+<body>
+  <!-- Main Container -->
+  <div class="wrapper">
+    <!-- Header Section -->
+    <div class="header-wrapper">
+      <img src="assets/images/logo.png" alt="">
+    </div>
+    <!-- Hero Section -->
+    <div class="hero-wrapper">
+      <h1 class="hero-title">Disfruta de los paisajes de <span class="hero-title-span">Chile</span></h1>
+      <div class="center-button">
+        <button class="button-primary" type="button" name="button">Más destinos</button>
+      </div>
+    </div>
+    <!-- Main Form -->
+    <form class="form-container" action="index.html" method="post">
+      <div class="form-wrapper">
+        <div class="form-input">
+          <label for="text-place">Lugar u hotel</label>
+          <input type="text" placeholder="Busca aquí">
+        </div>
+        <div class="form-input">
+          <label for="text-label">Fecha de llegada</label>
+          <input type="date" name="month_year">
+        </div>
+        <div class="form-input">
+          <label for="text-label">Fecha de salida</label>
+          <input type="date" name="month_year">
+        </div>
+        <div class="form-input">
+          <label for="text-label">Tipo de alojamiento</label>
+          <select class="form-select">
+            <option value="" hidden>Elige una opción</option>
+            <option value="1">Habitación</option>
+            <option value="2">Piso</option>
+            <option value="3">Apartamento</option>
+          </select>
+        </div>
+        <div class="center-button">
+          <input type="submit" value="buscar" class="button-secondary">
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
